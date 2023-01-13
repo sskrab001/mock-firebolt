@@ -175,8 +175,10 @@ function coreSendEvent(isBroadcast, ws, userId, method, result, msg, fSuccess, f
               logger: logger,
               setTimeout: setTimeout,
               setInterval: setInterval,
-              set: function ss(key, val) { return stateManagement.setScratch(userId, key, val) },
+              set: function ss(key, val, scope) { return stateManagement.setScratch(userId, key, val, scope) },
               get: function gs(key) { return stateManagement.getScratch(userId, key); },
+              delete: function ds(key, scope) { return stateManagement.deleteScratch(userId, key, scope)},
+              uuid: function cuuid() {return stateManagement.createUuid()},
               sendEvent: function(method, result, msg) {
                 sendEvent( ws, userId, method, result, msg, logSuccess.bind(this, method, result, msg), logErr.bind(this, method), logFatalErr.bind(this) );
               },
@@ -203,8 +205,10 @@ function coreSendEvent(isBroadcast, ws, userId, method, result, msg, fSuccess, f
               logger: logger,
               setTimeout: setTimeout,
               setInterval: setInterval,
-              set: function ss(key, val) { return stateManagement.setScratch(userId, key, val) },
+              set: function ss(key, val, scope) { return stateManagement.setScratch(userId, key, val, scope) },
               get: function gs(key) { return stateManagement.getScratch(userId, key); },
+              delete: function ds(key, scope) { return stateManagement.deleteScratch(userId, key, scope)},
+              uuid: function cuuid() {return stateManagement.createUuid()},
               sendEvent: function(method, result, msg) {
                 sendEvent( ws, userId, method, result, msg, logSuccess.bind(this, method, result, msg), logErr.bind(this, method), logFatalErr.bind(this) );
               },
