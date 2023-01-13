@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@firebolt-js/sdk": "^0.6.1",
-    "@firebolt-js/manage-sdk": "git+https://github.com/sskrab001/firebolt-manage-sdk.git",
+    "@firebolt-js/manage-sdk": "git+https://github.com/rdkcentral/firebolt-manage-sdk.git",
     "@formschema/native": "^2.0.0-beta.6",
     "ajv": "^6.12.6",
     "body-parser": "^1.19.0",
@@ -56,11 +56,10 @@
     "nopt": "^5.0.0",
     "tmp": "^0.2.1",
     "uuid": "^8.3.2",
-    "js-yaml":"^4.1.0",
+    "js-yaml": "^4.1.0",
     "ws": "^8.2.3"
   },
-  "optionalDependencies": {
-  },
+  "optionalDependencies": {},
   "keywords": [
     "firebolt",
     "mock"
