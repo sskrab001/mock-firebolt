@@ -1,0 +1,4 @@
+{
+  "method": "privacy.onAllowPersonalizationChanged",
+  "result": false 
+}

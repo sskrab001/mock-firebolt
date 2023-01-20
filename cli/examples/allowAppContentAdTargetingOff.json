@@ -1,0 +1,4 @@
+{
+  "method": "privacy.onAllowAppContentAdTargetingChanged",
+  "result": false 
+}

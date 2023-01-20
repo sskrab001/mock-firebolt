@@ -1,0 +1,4 @@
+{
+  "method": "privacy.onAllowWatchHistoryChanged",
+  "result": false 
+}
